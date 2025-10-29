@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOURAJ KRISHNA - Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">SOURAJ KRISHNA</div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Abstract Background Animation -->
+        <div class="abstract-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+        
+        <div class="hero-container">
+            <h1 class="hero-title">SOURAJ KRISHNA</h1>
+            <p class="hero-subtitle">Professional Video Editor -- Storytelling Through Motion</p>
+            
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">Premiere Pro</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">~/VideoProject$</span>
+                        <span class="terminal-command" id="command1">render --export 4K</span>
+                    </div>
+                    <div class="terminal-output">
+                        <span class="terminal-comment"># Rendering timeline at 3840x2160...</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">~/VideoProject$</span>
+                        <span class="terminal-command" id="command2">apply color-grade cinematic</span>
+                    </div>
+                    <div class="terminal-output">
+                        <span class="terminal-comment"># Applying LUTs and color correction...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Hey, I'm Souraj Krishna, an 18-year-old Video Editor, Motion Graphics Designer, Web Designer, and Discord Developer from Kerala, India. I blend creativity with technology to craft visuals and digital experiences that truly stand out.</p>
+                        <p>I specialize in creating cinematic edits, dynamic motion graphics, and interactive web designs that connect with people and tell powerful stories. Whether it's designing a clean, responsive website or editing a high-energy video, I always aim for professional precision and creative flair.</p>
+                        <p>I work with industry-standard software and tools to ensure every project I take on meets the highest quality standards — from Adobe Creative Suite to modern web technologies.</p>
+                        <div class="about-details">
+                            <p><strong><span class="gradient-icon-inline"><i class="fas fa-user"></i></span> Age:</strong> 18 Years Old</p>
+                            <p><strong><span class="gradient-icon-inline"><i class="fas fa-briefcase"></i></span> Roles:</strong> Video Editor, Motion Designer, Web Designer</p>
+                            <p><strong><span class="gradient-icon-inline"><i class="fas fa-map-marker-alt"></i></span> Location:</strong> Kerala, India</p>
+                            <p><strong><span class="gradient-icon-inline"><i class="fas fa-code"></i></span> Skills:</strong> Video Editing, Motion Graphics, Web Design, Discord Development</p>
+                        </div>
+                        <div class="about-quote">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="quote-text">"The magic you're searching for is hidden in the work you're avoiding."</p>
+                            <p class="quote-author">— Souraj Krishna</p>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="profile-container">
+                            <div class="orbit-ring ring-1"></div>
+                            <div class="orbit-ring ring-2"></div>
+                            <div class="orbit-ring ring-3"></div>
+                            <div class="floating-icon icon-1"><i class="fas fa-video"></i></div>
+                            <div class="floating-icon icon-2"><i class="fas fa-film"></i></div>
+                            <div class="floating-icon icon-3"><i class="fas fa-cut"></i></div>
+                            <div class="floating-icon icon-4"><i class="fas fa-palette"></i></div>
+                            <div class="avatar gradient-avatar">
+                                <img src="pfp.jpg" alt="Souraj Krishna Profile Picture">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="section-container">
+            <h2 class="section-title">Skills & Software</h2>
+            
+            <!-- Skill Category Tabs -->
+            <div class="skill-tabs">
+                <button class="skill-tab active" data-category="video">
+                    <i class="fas fa-film"></i>
+                    <span>Video Editing & Motion Graphics</span>
+                </button>
+                <button class="skill-tab" data-category="web">
+                    <i class="fas fa-code"></i>
+                    <span>Web Development</span>
+                </button>
+                <button class="skill-tab" data-category="discord">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord Development</span>
+                </button>
+            </div>
+
+            <!-- Skills Content -->
+            <div class="skills-content">
+                
+                <!-- Video Editing & Motion Graphics -->
+                <div class="skills-category active" data-category="video">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-1"><i class="fas fa-video"></i></span>
+                            <span class="skill-name">Adobe Premiere Pro</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-2"><i class="fas fa-magic"></i></span>
+                            <span class="skill-name">After Effects</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-3"><i class="fas fa-palette"></i></span>
+                            <span class="skill-name">DaVinci Resolve</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skills-category" data-category="web">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-4"><i class="fab fa-html5"></i></span>
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-5"><i class="fab fa-css3-alt"></i></span>
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-6"><i class="fab fa-js"></i></span>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-7"><i class="fab fa-node"></i></span>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-8"><i class="fas fa-code"></i></span>
+                            <span class="skill-name">TypeScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-9"><i class="fas fa-database"></i></span>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Discord Development -->
+                <div class="skills-category" data-category="discord">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-10"><i class="fab fa-node"></i></span>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-11"><i class="fab fa-discord"></i></span>
+                            <span class="skill-name">Discord.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-icon gradient-bg-12"><i class="fas fa-cogs"></i></span>
+                            <span class="skill-name">Full Discord Setup</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projectsGrid">
+                
+                <!-- PROJECT CARD TEMPLATE - DUPLICATE THIS SECTION TO ADD MORE PROJECTS -->
+                <!-- Video Editing / Motion Graphics Project Example -->
+                <div class="project-card" data-project="1" data-type="video">
+                    <div class="project-image">
+                        <!-- Option 1: Use cover image (recommended) -->
+                        <!-- <img src="images/project1-cover.jpg" alt="Project Cover" class="project-cover-img"> -->
+                        
+                        <!-- Option 2: Use gradient placeholder with icon (default) -->
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #d17842 0%, #8b6f47 100%);">
+                            <i class="fas fa-film"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Brand Commercial 2024</h3>
+                        <p class="project-description">A cinematic 60-second commercial for a luxury fashion brand featuring dynamic transitions and color grading.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Premiere Pro</span>
+                            <span class="project-tag">After Effects</span>
+                            <span class="project-tag">Color Grade</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="details-btn" onclick="openProjectModal(1)">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <a href="https://drive.google.com/your-video-link" target="_blank" class="view-project-btn">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Design Project Example -->
+                <div class="project-card" data-project="2" data-type="web">
+                    <div class="project-image">
+                        <!-- Option 1: Use cover image -->
+                        <!-- <img src="images/project2-cover.jpg" alt="Project Cover" class="project-cover-img"> -->
+                        
+                        <!-- Option 2: Use gradient placeholder -->
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #e89b6d 0%, #d17842 100%);">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Website</h3>
+                        <p class="project-description">Modern, responsive e-commerce platform with smooth animations and user-friendly interface.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Responsive</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="details-btn" onclick="openProjectModal(2)">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <a href="https://your-website-url.com" target="_blank" class="view-project-btn">
+                                <i class="fas fa-external-link-alt"></i> View Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Discord Bot Project Example -->
+                <div class="project-card" data-project="3" data-type="discord">
+                    <div class="project-image">
+                        <!-- Option 1: Use cover image -->
+                        <!-- <img src="images/project3-cover.jpg" alt="Project Cover" class="project-cover-img"> -->
+                        
+                        <!-- Option 2: Use gradient placeholder -->
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #8b6f47 0%, #5d4e37 100%);">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Community Discord Bot</h3>
+                        <p class="project-description">Custom Discord bot with moderation, music, and interactive features for community management.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Discord.js</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">API</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="details-btn" onclick="openProjectModal(3)">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <a href="https://github.com/your-repo" target="_blank" class="view-project-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motion Graphics Project Example -->
+                <div class="project-card" data-project="4" data-type="video">
+                    <div class="project-image">
+                        <!-- Option 1: Use cover image -->
+                        <!-- <img src="images/project4-cover.jpg" alt="Project Cover" class="project-cover-img"> -->
+                        
+                        <!-- Option 2: Use gradient placeholder -->
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #c4a574 0%, #8b6f47 100%);">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Music Video - "Neon Dreams"</h3>
+                        <p class="project-description">High-energy music video with VFX, motion tracking, and rhythmic cutting synchronized to the beat.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">After Effects</span>
+                            <span class="project-tag">VFX</span>
+                            <span class="project-tag">Motion Graphics</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="details-btn" onclick="openProjectModal(4)">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <a href="https://drive.google.com/your-motion-graphics" target="_blank" class="view-project-btn">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF PROJECT CARD TEMPLATE -->
+
+            </div>
+            <div class="view-all">
+                <a href="#" class="view-all-btn"><span class="gradient-icon-inline"><i class="fas fa-arrow-right"></i></span> View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <div class="modal-navigation">
+                    <button class="nav-btn" onclick="navigateProject(-1)">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <button class="nav-btn" onclick="navigateProject(1)">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-video">
+                    <!-- Cover image will be inserted here dynamically -->
+                    <div class="video-placeholder" id="modalVideo">
+                        <div class="play-overlay">
+                            <i class="fas fa-play-circle"></i>
+                            <p>Click to View Project</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h3><span class="gradient-icon-inline"><i class="fas fa-info-circle"></i></span> Project Details</h3>
+                    <div id="modalDescription"></div>
+                    <div class="modal-stats">
+                        <div class="stat-item">
+                            <span class="gradient-icon-inline"><i class="fas fa-clock"></i></span>
+                            <strong>Duration:</strong>
+                            <span id="modalDuration"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="gradient-icon-inline"><i class="fas fa-calendar"></i></span>
+                            <strong>Completed:</strong>
+                            <span id="modalDate"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="gradient-icon-inline"><i class="fas fa-user"></i></span>
+                            <strong>Client:</strong>
+                            <span id="modalClient"></span>
+                        </div>
+                    </div>
+                    <div class="modal-tags" id="modalTags"></div>
+                    <div class="modal-url">
+                        <a href="#" id="modalProjectLink" target="_blank" class="modal-view-btn">
+                            <i class="fas fa-external-link-alt"></i> View Full Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials-grid">
+                
+                <!-- TESTIMONIAL 1 - EASY TO DUPLICATE -->
+                <!-- To add more testimonials, copy from here... -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar gradient-bg-1">
+                            <i class="fas fa-user"></i> <!-- Client icon -->
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Afnas</h4> <!-- Client Name -->
+                            <p>Dropshipping Business</p> <!-- Client Role/Business -->
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Souraj Krishna edited my dropshipping videos. The work was good, on time, and met my requirements."</p>
+                </div>
+                <!-- ...to here and paste below -->
+
+                <!-- TESTIMONIAL 2 - EASY TO DUPLICATE -->
+                <!-- To add more testimonials, copy from here... -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar gradient-bg-2">
+                            <i class="fas fa-user"></i> <!-- Client icon -->
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>userfiverrp</h4> <!-- Client Name -->
+                            <p>Fiverr Client</p> <!-- Client Role/Business -->
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Souraj was detailed and catered to my needs. Top video editor and will now be my long term editor! Open to revisions and gets you the video you want."</p>
+                </div>
+                <!-- ...to here and paste below -->
+
+                <!-- 
+                HOW TO ADD MORE TESTIMONIALS:
+                1. Copy any testimonial block above (from "TESTIMONIAL X" comment to "...to here")
+                2. Paste it below
+                3. Update the client name in <h4> tag
+                4. Update the client role/business in <p> tag
+                5. Update the testimonial text
+                6. Change gradient-bg-2 to gradient-bg-3, gradient-bg-4, etc. (up to gradient-bg-12)
+                -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="contact-header">
+                <div class="gradient-icon-large">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h2 class="section-title">Let's Create Together</h2>
+                <p class="contact-subtitle">Have a video project in mind? Let's bring your vision to life!</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- WhatsApp Contact Form -->
+                <div class="contact-form-container">
+                    <h3><span class="gradient-icon-inline"><i class="fab fa-whatsapp"></i></span> Message via WhatsApp</h3>
+                    <form class="contact-form" id="whatsappForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Choose Service</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="Video Editing">Video Editing</option>
+                                <option value="Motion Graphics">Motion Graphics</option>
+                                <option value="Color Grading">Color Grading</option>
+                                <option value="VFX & Compositing">VFX & Compositing</option>
+                                <option value="Web Design">Web Design</option>
+                                <option value="Discord Bot">Discord Bot Development</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn whatsapp-btn">
+                            <span class="gradient-icon-inline"><i class="fab fa-whatsapp"></i></span> Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Connect Links -->
+                <div class="contact-info-container">
+                    <h3><span class="gradient-icon-inline"><i class="fas fa-link"></i></span> Connect With Me</h3>
+                    <div class="contact-info">
+                        
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/918590297701" target="_blank" class="info-item social-link">
+                            <span class="gradient-icon-inline"><i class="fab fa-whatsapp"></i></span>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <p>Chat directly on WhatsApp</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/soura_jkrishna/" target="_blank" class="info-item social-link">
+                            <span class="gradient-icon-inline"><i class="fab fa-instagram"></i></span>
+                            <div>
+                                <strong>Instagram</strong>
+                                <p>Check out my latest work</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+
+                        <!-- Discord -->
+                        <a href="https://discord.gg/q9hCgySuhJ" target="_blank" class="info-item social-link">
+                            <span class="gradient-icon-inline"><i class="fab fa-discord"></i></span>
+                            <div>
+                                <strong>Discord</strong>
+                                <p>Join my Discord server</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+
+                        <!-- Fiverr -->
+                        <a href="https://www.fiverr.com/souraj_krishna?public_mode=true" target="_blank" class="info-item social-link">
+                            <span class="gradient-icon-inline"><i class="fas fa-briefcase"></i></span>
+                            <div>
+                                <strong>Fiverr</strong>
+                                <p>Hire me on Fiverr</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="quick-response">
+                        <h4><span class="gradient-icon-inline"><i class="fas fa-bolt"></i></span> Quick Response</h4>
+                        <p>I typically respond within 24 hours during weekdays. Looking forward to hearing from you!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-header">
+                <div class="gradient-icon-large">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>SOURAJ KRISHNA's Portfolio</h3>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/soura_jkrishna/" target="_blank" class="footer-social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://discord.gg/q9hCgySuhJ" target="_blank" class="footer-social-link"><i class="fab fa-discord"></i> Discord</a>
+                <a href="mailto:contact@souraj.me" class="footer-social-link"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 Souraj Krishna. All rights reserved.</p>
+            </div>
+            <div class="footer-tagline">
+                <p><span class="gradient-icon-inline"><i class="fas fa-heart"></i></span>rendering your thanks....</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

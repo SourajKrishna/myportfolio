@@ -1,0 +1,28 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle cx="100" cy="100" r="95" fill="#d17842"/>
+    
+    <!-- Inner circle -->
+    <circle cx="100" cy="100" r="85" fill="#8b6f47"/>
+    
+    <!-- Film strip design -->
+    <rect x="60" y="70" width="80" height="60" rx="5" fill="#e89b6d"/>
+    <rect x="50" y="70" width="8" height="60" fill="#d17842"/>
+    <rect x="142" y="70" width="8" height="60" fill="#d17842"/>
+    
+    <!-- Film holes -->
+    <circle cx="54" cy="80" r="2" fill="#f5efe6"/>
+    <circle cx="54" cy="95" r="2" fill="#f5efe6"/>
+    <circle cx="54" cy="110" r="2" fill="#f5efe6"/>
+    <circle cx="54" cy="125" r="2" fill="#f5efe6"/>
+    <circle cx="146" cy="80" r="2" fill="#f5efe6"/>
+    <circle cx="146" cy="95" r="2" fill="#f5efe6"/>
+    <circle cx="146" cy="110" r="2" fill="#f5efe6"/>
+    <circle cx="146" cy="125" r="2" fill="#f5efe6"/>
+    
+    <!-- Play button -->
+    <polygon points="85,90 85,110 110,100" fill="#f5efe6"/>
+    
+    <!-- Letters SK -->
+    <text x="100" y="165" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#f5efe6" text-anchor="middle">SK</text>
+</svg>
