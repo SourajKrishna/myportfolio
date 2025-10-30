@@ -1712,6 +1712,33 @@ body {
     font-style: italic;
 }
 
+.footer-mobile-link {
+    margin-top: 1.5rem;
+}
+
+.mobile-version-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.mobile-version-link:hover {
+    background: var(--light-orange);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(209, 120, 66, 0.3);
+}
+
+.mobile-version-link i {
+    font-size: 1.2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 968px) {
     .nav-menu {
