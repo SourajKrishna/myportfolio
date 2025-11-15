@@ -29,6 +29,17 @@ body {
     overflow-x: hidden;
 }
 
+/* Bootstrap Overrides - Prevent conflicts */
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Remove Bootstrap's default max-width on containers for our custom sections */
+.section-container.container {
+    max-width: 1200px;
+}
+
 /* Navigation */
 .navbar {
     position: fixed;
@@ -1767,10 +1778,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-    }
-    
     .nav-container {
         justify-content: space-between;
     }
@@ -1784,6 +1791,136 @@ body {
     }
     
     .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-grid {
+        flex-direction: column;
+    }
+    
+    .about-text, .about-image {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .terminal {
+        margin-top: 2rem;
+    }
+}
+
+/* Bootstrap Navbar Custom Styles */
+.navbar-toggler {
+    border-color: var(--orange);
+    padding: 0.5rem 0.75rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(209, 120, 66, 0.25);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(209, 120, 66, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: var(--cream);
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-menu .nav-item {
+        text-align: center;
+    }
+}
+
+/* Mobile Responsive Improvements */
+@media (max-width: 576px) {
+    .hero {
+        padding: 5rem 1rem 2rem;
+        min-height: auto;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-container {
+        padding: 2rem 1rem;
+    }
+    
+    .skill-tabs {
+        flex-direction: column;
+    }
+    
+    .skill-tab {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-grid {
+        padding: 0;
+    }
+    
+    .footer-social {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    .modal-navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .nav-btn {
+        width: 100%;
+    }
+}
+
+/* Tablet Responsive */
+@media (min-width: 577px) and (max-width: 991.98px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-grid {
         grid-template-columns: 1fr;
     }
 }
