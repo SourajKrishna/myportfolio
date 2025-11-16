@@ -35,6 +35,24 @@ document.getElementById('whatsappForm').addEventListener('submit', function(e) {
     this.reset();
 });
 
+// Email Notification Popup
+const emailTrigger = document.getElementById('emailPopupTrigger');
+const emailNotification = document.getElementById('emailNotification');
+
+if (emailTrigger && emailNotification) {
+    emailTrigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Show notification
+        emailNotification.classList.add('show');
+        
+        // Hide notification after 3 seconds
+        setTimeout(function() {
+            emailNotification.classList.remove('show');
+        }, 3000);
+    });
+}
+
 // Terminal typing animation
 function typeWriter(element, text, speed = 100) {
     let i = 0;

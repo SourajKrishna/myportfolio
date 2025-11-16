@@ -547,6 +547,46 @@ body {
     text-decoration: none;
 }
 
+/* Email Notification Popup */
+.email-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, var(--orange) 0%, var(--dark-brown) 100%);
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 8px 32px rgba(209, 120, 66, 0.4);
+    font-size: 1.1rem;
+    font-weight: 600;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateX(400px);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    pointer-events: none;
+}
+
+.email-notification.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.email-notification i {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .email-notification {
+        right: 10px;
+        left: 10px;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
 
 .contact-form .form-group {
     margin-bottom: 1rem;
