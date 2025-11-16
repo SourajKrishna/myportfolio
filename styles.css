@@ -507,6 +507,47 @@ body {
     box-shadow: 0 6px 24px rgba(0,0,0,0.06);
 }
 
+.email-display-container {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.email-address-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, var(--cream) 0%, var(--beige) 100%);
+    border: 2px solid var(--orange);
+    border-radius: 12px;
+    padding: 1.2rem 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(209, 120, 66, 0.15);
+}
+
+.email-icon {
+    font-size: 1.8rem;
+    color: var(--orange);
+}
+
+.email-address {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--dark-brown);
+    letter-spacing: 0.5px;
+}
+
+.email-instruction {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.email-btn {
+    display: inline-flex;
+    text-decoration: none;
+}
+
+
 .contact-form .form-group {
     margin-bottom: 1rem;
 }
