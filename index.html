@@ -496,11 +496,20 @@
                 </div>
                 <h2 class="section-title">Let's Create Together</h2>
                 <p class="contact-subtitle">Have a video project in mind? Let's bring your vision to life!</p>
+                <div class="contact-toggle-wrapper">
+                    <div class="toggle-label">WhatsApp</div>
+                    <div class="custom-toggle" id="contactModeToggle">
+                        <div class="toggle-slider">
+                            <i class="fab fa-whatsapp toggle-icon" id="toggleIcon"></i>
+                        </div>
+                    </div>
+                    <div class="toggle-label">Email</div>
+                </div>
             </div>
             
             <div class="contact-grid">
                 <!-- WhatsApp Contact Form -->
-                <div class="contact-form-container">
+                <div class="contact-form-container" id="whatsappSection">
                     <h3><span class="gradient-icon-inline"><i class="fab fa-whatsapp"></i></span> Message via WhatsApp</h3>
                     <form class="contact-form" id="whatsappForm">
                         <div class="form-group">
@@ -526,6 +535,28 @@
                         </div>
                         <button type="submit" class="submit-btn whatsapp-btn">
                             <span class="gradient-icon-inline"><i class="fab fa-whatsapp"></i></span> Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Email Contact Form (hidden by default) -->
+                <div class="contact-form-container d-none" id="emailSection">
+                    <h3><span class="gradient-icon-inline"><i class="fas fa-envelope"></i></span> Send Email</h3>
+                    <form class="contact-form" id="emailForm">
+                        <div class="form-group">
+                            <label for="emailName">Your Name</label>
+                            <input type="text" id="emailName" name="emailName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailSubject">Subject</label>
+                            <input type="text" id="emailSubject" name="emailSubject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailMessage">Message</label>
+                            <textarea id="emailMessage" name="emailMessage" rows="6" placeholder="Write your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn email-btn">
+                            <span class="gradient-icon-inline"><i class="fas fa-paper-plane"></i></span> Send Email
                         </button>
                     </form>
                 </div>

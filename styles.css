@@ -401,6 +401,149 @@ body {
     align-items: center;
 }
 
+/* Contact toggle styling - matches existing theme */
+.contact-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.toggle-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, color;
+}
+
+.custom-toggle {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--beige) 0%, var(--cream) 100%);
+    border-radius: 50px;
+    border: 3px solid var(--orange);
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 15px rgba(209, 120, 66, 0.2);
+    will-change: background, border-color, box-shadow, transform;
+}
+
+.custom-toggle:hover {
+    box-shadow: 0 6px 20px rgba(209, 120, 66, 0.35);
+    transform: scale(1.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--orange) 0%, var(--light-orange) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+                background 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    will-change: left, background, transform;
+}
+
+.toggle-icon {
+    color: var(--white);
+    font-size: 1.2rem;
+    transition: opacity 0.3s ease, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    will-change: opacity, transform;
+}
+
+.custom-toggle.active {
+    background: linear-gradient(135deg, var(--dark-brown) 0%, var(--brown) 100%);
+    border-color: var(--dark-brown);
+}
+
+.custom-toggle.active .toggle-slider {
+    left: 42px;
+    background: linear-gradient(135deg, var(--dark-brown) 0%, var(--brown) 100%);
+    transform: rotate(360deg);
+}
+
+/* Fade first label when active, highlight second */
+.contact-toggle-wrapper .toggle-label:first-child {
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-toggle-wrapper .toggle-label:last-child {
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-toggle.active ~ .toggle-label:first-child {
+    opacity: 0.5;
+    color: var(--text-light);
+}
+
+/* When not active, fade email label */
+.custom-toggle:not(.active) ~ .toggle-label:last-child {
+    opacity: 0.5;
+    color: var(--text-light);
+}
+
+.custom-toggle.active ~ .toggle-label:last-child {
+    opacity: 1;
+    color: var(--orange);
+}
+
+.contact-form-container {
+    background: rgba(255,255,255,0.6);
+    padding: 1.6rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid rgba(44,36,22,0.12);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--text-dark);
+}
+
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: linear-gradient(135deg, var(--orange) 0%, var(--dark-brown) 100%);
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+
 .about-text p {
     margin-bottom: 1.2rem;
     color: var(--text-light);

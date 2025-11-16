@@ -35,6 +35,67 @@ document.getElementById('whatsappForm').addEventListener('submit', function(e) {
     this.reset();
 });
 
+// Contact Mode Toggle (WhatsApp <-> Email) - Custom animated toggle
+const contactToggle = document.getElementById('contactModeToggle');
+const whatsappSection = document.getElementById('whatsappSection');
+const emailSection = document.getElementById('emailSection');
+const toggleIcon = document.getElementById('toggleIcon');
+
+let isEmailMode = false;
+
+function updateContactMode() {
+    if (contactToggle && whatsappSection && emailSection && toggleIcon) {
+        if (isEmailMode) {
+            // Show Email
+            contactToggle.classList.add('active');
+            whatsappSection.classList.add('d-none');
+            emailSection.classList.remove('d-none');
+            // Change icon to email
+            toggleIcon.className = 'fas fa-envelope toggle-icon';
+        } else {
+            // Show WhatsApp
+            contactToggle.classList.remove('active');
+            emailSection.classList.add('d-none');
+            whatsappSection.classList.remove('d-none');
+            // Change icon to whatsapp
+            toggleIcon.className = 'fab fa-whatsapp toggle-icon';
+        }
+    }
+}
+
+if (contactToggle) {
+    contactToggle.addEventListener('click', function() {
+        isEmailMode = !isEmailMode;
+        updateContactMode();
+    });
+    // Initialize state (default WhatsApp)
+    isEmailMode = false;
+    updateContactMode();
+}
+
+// Email Form Handler - builds a proper mailto link with URL-encoded subject and body
+const emailForm = document.getElementById('emailForm');
+if (emailForm) {
+    emailForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('emailName').value || '';
+        const subject = document.getElementById('emailSubject').value || '';
+        const message = document.getElementById('emailMessage').value || '';
+
+        // Prepend sender name to message body for clarity
+        const fullBody = `Name: ${name}%0A%0A${message}`;
+
+        const mailto = `mailto:contact@souraj.me?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullBody)}`;
+
+        // Open the user's default mail client
+        window.location.href = mailto;
+
+        // Optional: reset the form
+        this.reset();
+    });
+}
+
 // Terminal typing animation
 function typeWriter(element, text, speed = 100) {
     let i = 0;
