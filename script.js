@@ -89,44 +89,14 @@ window.addEventListener('load', () => {
 // TO ADD MORE PROJECTS: Copy a project object and increment the number
 const projectsData = {
     1: {
-        title: "Brand Commercial 2024",
-        description: "A high-end 60-second commercial for a luxury fashion brand. This project involved complex color grading, dynamic transitions, and motion graphics. We shot on location with a professional crew and delivered in 4K resolution. The final piece increased brand engagement by 150%.",
-        duration: "60 seconds",
-        date: "January 2024",
-        client: "Luxury Fashion Co.",
-        tags: ["Premiere Pro", "After Effects", "Color Grade", "4K", "Commercial"],
-        url: "https://drive.google.com/your-video-link", // Replace with your Google Drive or YouTube link
-        coverImage: "images/project1-cover.jpg" // Optional: Add cover image path (comment out if not using)
-    },
-    2: {
-        title: "E-Commerce Website",
-        description: "A modern, fully responsive e-commerce platform featuring smooth animations, intuitive user interface, and seamless shopping experience. Built with clean code and optimized for performance across all devices. Includes shopping cart, product filtering, and secure checkout flow.",
-        duration: "Multi-page website",
-        date: "February 2024",
-        client: "Online Retail Store",
-        tags: ["HTML/CSS", "JavaScript", "Responsive", "UI/UX", "E-Commerce"],
-        url: "https://your-website-url.com", // Replace with your live website URL
-        coverImage: "images/project2-cover.jpg" // Optional: Add cover image path
-    },
-    3: {
-        title: "Community Discord Bot",
-        description: "Custom-built Discord bot with advanced moderation features, music playback, interactive games, and community management tools. Includes custom commands, auto-moderation, welcome messages, and analytics dashboard. Serves 10,000+ members efficiently.",
-        duration: "Full-featured bot",
-        date: "March 2024",
-        client: "Gaming Community",
-        tags: ["Discord.js", "Node.js", "API", "Database", "Automation"],
-        url: "https://github.com/your-repo", // Replace with your GitHub repo or bot invite link
-        coverImage: "images/project3-cover.jpg" // Optional: Add cover image path
-    },
-    4: {
-        title: "Music Video - 'Neon Dreams'",
-        description: "An energetic music video featuring VFX, motion tracking, and beat-synchronized editing. The project included green screen compositing, particle effects, and creative transitions that matched the song's rhythm perfectly. Shot in 24fps for a cinematic feel with vibrant neon color grading.",
-        duration: "3 minutes 45 seconds",
-        date: "April 2024",
-        client: "Independent Artist",
-        tags: ["After Effects", "VFX", "Motion Graphics", "Color Grading", "Compositing"],
-        url: "https://drive.google.com/your-motion-graphics", // Replace with your video link
-        coverImage: "images/project4-cover.jpg" // Optional: Add cover image path
+        title: "LOG - Premium Stock Footage",
+        description: "LOG is a premium stock footage website that provides high-quality video content for creators and professionals. The platform offers thousands of professional stock media files, making it easy to find the perfect footage for any project. Designed and developed by Souraj Krishna, LOG delivers a seamless browsing experience with an intuitive interface and extensive media library.",
+        duration: "Full Website Platform",
+        date: "November 2025",
+        client: "Souraj Krishna",
+        tags: ["Web Design", "Stock Media", "Video Platform", "UI/UX", "Content Management"],
+        url: "https://log.souraj.me",
+        coverImage: "log cover.png"
     }
 };
 
